@@ -4,6 +4,12 @@ public class Vehicle extends BaseEntity{
 private String number;
 private VehicleType vehicleType;
 
+    public Vehicle(String number, VehicleType type) {
+        super();
+        this.number= number;
+        this.vehicleType=type;
+    }
+
     public String getNumber() {
         return number;
     }
