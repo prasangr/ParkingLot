@@ -1,14 +1,16 @@
 package DTO;
 
+import Models.VehicleType;
+
 public class GenerateTicketRequestDto {
     private Long gateId;
     private String vehicleNumber;
-    private String vehicleType;
+    private VehicleType vehicleType;
 
-    public String getVehicleType() {
+    public VehicleType getVehicleType() {
         return vehicleType;
     }
-    public void setVehicleType(String vehicleType) {
+    public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
     }
 

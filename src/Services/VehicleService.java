@@ -11,8 +11,9 @@ public VehicleService(VehicleRepository vehicleRepository) {
     this.vehicleRepository = vehicleRepository;
     }
 
-    public void registerVehicle(String number, VehicleType type){
-        vehicleRepository.addVehicle(new Vehicle(number,type));
+    public Vehicle registerVehicle(String number, VehicleType type){
+        return this.vehicleRepository.addVehicle(new Vehicle(number,type));
+
     }
     public Vehicle getVehicleByNumber(String number){
         return vehicleRepository.getVehicle(number);
